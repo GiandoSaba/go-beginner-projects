@@ -39,8 +39,6 @@ func age(msg *discord.Message) {
 func main() {
 	fmt.Println("Starting...")
 
-	os.Setenv("BOT_TOKEN", "MTIyNTc4NDYzNjI3ODQ0NDA0Mg.GTEM4g.RmGA4FJbbTrZvJUNePn_iYwBhvEkmcPX1wIP7Q")
-
 	client = gateway.NewSession(&gateway.Options{
 		Token:   os.Getenv("BOT_TOKEN"),
 		Intents: gateway.IntentsAll,
